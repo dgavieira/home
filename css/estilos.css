@@ -1,6 +1,10 @@
 body {
     background-image: url(https://akns-images.eonline.com/eol_images/Entire_Site/2020017/rs_1024x759-200117120856-1024-The-Office-Stress-Relief-2.jpg);
-    background-size: 100%;
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Courier;
     height: 100vh;
 }
