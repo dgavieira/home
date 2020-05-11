@@ -1,2 +1,2 @@
 # Site Pessoal Template
- Template de site pessoal.
+ Projeto de site pessoal para aprender conceitos de html e css.
