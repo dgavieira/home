@@ -42,7 +42,7 @@ body {
 }
 
 header {
-    height: 50vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,13 +82,60 @@ a:hover {
 .site-subtitle {
     color: whitesmoke;
     text-align: center;
+    font-family: 'Courier Prime', monospace;
 }
 
 .site-subtitle {
+    font-family: 'Source Code Pro', monospace;
     font-style: italic;
+    line-height: 1.8em;
+}
+
+.projetos {
+    padding: 2em;
+}
+
+.projetos h2 {
+    font-family: 'Source Code Pro', monospace;
+    color: whitesmoke;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.projetos .grid {
+    display: grid;
+    gap: 2em;
+}
+
+@media (min-width: 512px) {
+    .projetos .grid {
+        grid-template-columns: repeat(2, 240px);
+        justify-content: center;
+    }
+}
+
+@media (min-width: 820px) {
+    .projetos .grid {
+        grid-template-columns: repeat(3, 240px);
+        align-content: center;
+        justify-content: center;
+        height: calc(100vh - 5.5em - 48px);
+    }
+}
+
+.projetos figure {
+    text-align: center;
+}
+
+.projetos figure figcaption {
+    font-family: 'Source Code Pro', monospace;
+    color: whitesmoke;
 }
 
 .img-portfolio {
     height: 180px;
-    width: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: left bottom;
 }
